@@ -9,7 +9,6 @@ const Title = styled.h2`
 `;
 
 export default function NewProducts({products}) {
-  console.log(products);
   return (
     <Center>
       <Title>New Arrivals</Title>
