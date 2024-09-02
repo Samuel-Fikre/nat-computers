@@ -3,8 +3,11 @@ import styled from "styled-components";
 import Center from "@/components/Center";
 import { useContext, useState } from "react";
 import { CartContext } from "@/components/CartContext";
-import BarsIcon from "@/components/icons/Bars";
+
 import { Users } from "./users"; // Ensure this imports your actual product data
+import BarsIcon from "./Icons/Bars";
+
+
 
 const StyledHeader = styled.header`
   background-color: #0e1420;
