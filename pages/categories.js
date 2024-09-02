@@ -24,7 +24,7 @@ export default function Categories() {
 
   useEffect(() => {
     setProducts(productsData[selectedCategory]);
-  }, [selectedCategory]);
+  }, [selectedCategory,productsData]);
 
   const handleCategoryChange = (event) => {
     setSelectedCategory(event.target.value);

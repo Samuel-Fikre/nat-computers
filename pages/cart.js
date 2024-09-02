@@ -8,6 +8,8 @@ import axios from "axios";
 import Table from "@/components/Table";
 import Input from "@/components/Input";
 import Footer from "@/components/Footer";
+import Image from 'next/image';
+
 
 const ColumnsWrapper = styled.div`
   display: grid;
@@ -96,7 +98,7 @@ export default function CartPage() {
       setIsSuccess(true);
       clearCart();
     }
-  }, []);
+  }, [clearCart]);
   function moreOfThisProduct(id) {
     addProduct(id);
   }
@@ -160,9 +162,10 @@ export default function CartPage() {
                   {products.map((product) => (
                     <tr key={product._id}>
                       <ProductInfoCell>
-                        <ProductImageBox>
-                          <img src={product.images[0]} alt="" />
-                        </ProductImageBox>
+                      <ProductImageBox>
+  <Image src={product.images[0]} alt="" width={200} height={60} />
+</ProductImageBox>
+
                         {product.title}
                       </ProductInfoCell>
                       <td>
