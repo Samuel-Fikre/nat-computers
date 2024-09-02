@@ -1,10 +1,11 @@
 import Featured from "@/components/Featured";
 import Header from "@/components/Header";
-import Footer from "@/components/footer";
 import { Product } from "@/models/products";
 import { mongooseConnect } from "@/lib/mongoose";
 import NewProducts from "@/components/NewProducts";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Footer from "@/components/Footer";
+
 
 
 export default function Home({ featuredProduct, newProducts }) {
